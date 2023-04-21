@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tifeboot</title>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--navigation-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="images/small_lion.jpg" class="rounded-pill" style="width: 40px;">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                      <input class="formcontrol me-2" type="text" placeholder="search">
+                      <button class="btn btn-secondary">search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container m-3">
+        <form>
+            <fieldset>
+                <legend class="bg-info" style="border-radius: 10px;">Personal Information</legend>
+                <table>
+                    <tr>
+                        <td>First-name</td>
+                        <td><input type="text" required placeholder="First-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Middle-name</td>
+                        <td><input type="text" required placeholder="Middle-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last-name</td>
+                        <td><input type="text" required placeholder="Last-name">
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone No</td>
+                        <td><input type="text" required placeholder="Phone No" maxlength="11"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <select name="day" id="day">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select name="month" id="month">
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <select name="year" id="year">
+                                <option>1980</option>
+                                <option>1981</option>
+                                <option>1982</option>
+                                <option>1983</option>
+                                <option>1984</option>
+                                <option>1985</option>
+                                <option>1986</option>
+                                <option>1987</option>
+                                <option>1988</option>
+                                <option>1989</option>
+                                <option>1990</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marital-Status</td>
+                        <td>
+                            <input type="radio" name="ms">Single
+                            <input type="radio" name="ms">Married
+                            <input type="radio" name="ms">Divorced
+                            <input type="radio" name="ms">Sepatated
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employment-Status</td>
+                        <td>
+                            <input type="radio" name="es">Employed
+                            <input type="radio" name="es">Unemployed
+                            <input type="radio" name="es">Student
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State of origin</td>
+                        <td>
+                            <select>
+                                <option value="">Abia</option>
+                                <option value="">Adamawa</option>
+                                <option value="">Akwa Ibom</option>
+                                <option value="">Anambra</option>
+                                <option value="">Bauchi</option>
+                                <option value="">Bayelsa</option>
+                                <option value="">Benue</option>
+                                <option value="">Borno</option>
+                                <option value="">Cross River</option>
+                                <option value="">Delta</option>
+                                <option value="">Ekiti</option>
+                                <option value="">Enugu</option>
+                                <option value="">Gombe</option>
+                                <option value="">Imo</option>
+                                <option value="">Jigawa</option>
+                                <option value="">Kaduna</option>
+                                <option value="">Kano</option>
+                                <option value="">Kastina</option>
+                                <option value="">Kebbi</option>
+                                <option value="">Lagos</option>
+                                <option value="">Nasarawa</option>
+                                <option value="">Niger</option>
+                                <option value="">Ogun</option>
+                                <option value="">Osun</option>
+                                <option value="">Oyo</option>
+                                <option value="">Plateau</option>
+                                <option value="">Rivers</option>
+                                <option value="">Sokoto</option>
+                                <option value="">Taraba</option>
+                                <option value="">Yobe</option>
+                                <option value="">Zamfara</option>
+                                <option value="">FCT Abuja</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Social media</td>
+                        <td>
+                            <input type="checkbox">Facebook
+                            <input type="checkbox">Twitter
+                            <input type="checkbox">Instagram
+                            <input type="checkbox">Linkedin
+                            <input type="checkbox">Discord
+                            <input type="checkbox">Tiktok
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload Picture</td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn btn-success" type="submit"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend class="bg-info mt-3" style="border-radius: 10px;">Account Information</legend>
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" required placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" required placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" required placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm password</td>
+                        <td><input type="password" required placeholder="Confirm password"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn btn-success" type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div class="container-fluid p-3 bg-dark text-white">
+        <div class="row">
+            <div class="col">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde reiciendis ab sapiente accusantium quasi sit quidem placeat dicta enim voluptates labore quibusdam adipisci, quae similique, reprehenderit doloremque nulla? Adipisci.</p>
+                <button class="btn btn-success">About</button>
+            </div>
+            <div class="col">
+                <h4>Training Services</h4>
+                <table class="table table-bordered bg-light text-dark">
+                    <tr>
+                        <td>Individual Training</td>
+                    </tr>
+                    <tr>
+                        <td>Corparate Training</td>
+                    </tr>
+                    <tr>
+                        <td>Online Training</td>
+                    </tr>
+                    <tr>
+                        <td>Educational Services</td>
+                    </tr>
+                    <tr>
+                        <td>Certification Exams</td>
+                    </tr>
+                    <tr>
+                        <td>Tertiary Education</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <h4>Our Partners</h4>
+
+                <ul>
+                    <li>MTN</li>
+                    <li>Glo Mobile</li>
+                    <li>Coca Cola</li>
+                    <li>Dangote Groups</li>
+                    <li>Netflix</li>
+                    <li>Zenith Bank</li>
+                    <li>African Magic</li>
+                    <li>Star Times</li>
+                </ul>
+            </div>
+            <div class="col">
+                <H4>Contact Info</H4>
+                <ul>
+                   <li><a>Email:</a> <a href="mailto:muiztripplea2000@gmail.com">muiztripplea2000@gmail.com</a></li>
+                   <li><a>Twitter:</a> <a href="#">Ak_in_ba_mi</a></li>
+                   <li><a>Linkedin:</a> <a href="#">Akinbami Abdulmuiz</a></li>
+                   <li><a>Instagram:</a> <a href="#">T_1_f_e</a></li>
+                   <li><a>Tiktok:</a> <a href="#">Tife</a></li>
+                   <li><a>Phone No:</a> <a>07059427248</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
